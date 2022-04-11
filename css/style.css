@@ -55,6 +55,7 @@ button{
     width: 155px;
     height: 50px;
     background-color: var(--Verylightgray);
+    cursor: pointer;
     
 }
 .button-1{
