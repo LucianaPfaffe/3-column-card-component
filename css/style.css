@@ -1,0 +1,128 @@
+
+
+:root{
+    /*primary colors*/
+--Brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+
+/* Neutral colors*/
+--Transparentwhite: hsla(0, 0%, 100%, 0.75);
+--Verylightgray: hsl(0, 0%, 95%);
+
+
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media (min-width: 375px) {
+main, section{
+   padding-top: 30px;
+}
+main,section,div{
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin: auto;
+    height: 450px;
+    
+}
+.card-1{
+    background-color: var(--Brightorange);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+h3{
+    color: var(--Verylightgray);
+    margin: 30px 0px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+}
+p{
+    color: var(--Transparentwhite);
+    font-size: 15px;
+    font-weight: 400;
+}
+button{
+    border-radius: 40px;
+    margin-top: 35px;
+    font-size: 18px;
+    margin: auto;
+    border:0px;
+    width: 155px;
+    height: 50px;
+    background-color: var(--Verylightgray);
+    
+}
+.button-1{
+    
+    color: var(--Brightorange);
+    
+
+}
+.card-2{
+     background-color: var(--Darkcyan);
+}
+.button-2{
+    color: var(--darkcyan) ;
+}
+.card-3{
+    background-color: var(--Verydarkcyan);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+footer{
+	position: relative;
+    bottom: 0;
+    height: 200px;
+    margin-top: 30px;
+    background: var(--Verylightgray)
+}
+footer,div{
+    margin-top: 30px;
+    color: black;
+}
+.color{
+    text-decoration: none;
+    color: var(--Brightorange);
+}
+ 
+
+
+
+
+}
+
+
+
+@media (min-width: 1440px) {
+    main,section{
+        display: flex;
+        flex-direction: row;
+    }
+    main,section, div{
+        height: 500px;
+        width: 65%;
+    }
+    .card-1{
+        border-top-right-radius: 0px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .card-3{
+        border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    }
+    button{
+        width: 200px;
+        height: 50px;
+    }
+    
+footer{
+    width: 400px;
+}
+}
